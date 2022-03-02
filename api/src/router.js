@@ -45,7 +45,7 @@ router.post('/upload', upload.single('photo'), async (request, response) => {
     return response.status(201).json({success: true});
   });
     
-route.get('/photo-viewer', (req,res) => {
+router.get('/photo-viewer', (req,res) => {
   res.sendFile(photoPath);
 })
 
